@@ -9,12 +9,42 @@
     background-color: #0c3b60;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(135deg, #0d3b66 0%, #082947 50%, #03192e 100%);
+    position: relative;
+    overflow-x: hidden;
 }
+
+.cuerpo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 60%);
+    z-index: 0;
+}
+
+.cuero::after {
+    content: "";
+    position: absolute;
+    top: -50;
+    right: -50;
+    width: 45vw;
+    height: 45vw;
+    max-width: 500px;
+    max-height: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 40px;
+    pointer-events: none;
+    z-index: 0;
+}   
 
 .contenedor-principal {
     width: 100%;
     display: flex;
     flex-direction: column;
+    z-index: 1;
     flex: 1; /* Ocupa todo el alto en móviles si es necesario */
 }
 

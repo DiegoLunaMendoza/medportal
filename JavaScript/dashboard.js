@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Render de la tabla de personas
     const tbody = document.getElementById('personasTable');
     const personas = [
         { nombre: 'Sardi', edad: 80 },
