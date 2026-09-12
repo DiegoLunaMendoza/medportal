@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const username = document.getElementById('usuario').value;
         const password = document.getElementById('password').value;
 
-        // NOTA: credenciales hardcodeadas solo para maqueta/demo.
-        // En un caso real esta validación debe hacerla un backend.
         if (username === 'admin' && password === 'password') {
             window.location.href = 'dashboard.html';
         } else {
