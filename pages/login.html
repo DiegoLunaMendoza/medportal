@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - MedPortal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="cuerpo">
+    <main class="contenedor-principal">
+        <h1 class="titulo-portal">MedPortal</h1>
+
+        <div class="tarjeta">
+            <form action="dashboard.html" method="POST" class="formulario-login">
+                
+                <div class="bloque-cabecera">
+                    <h2 class="subtitulo">Bienvenido de nuevo</h2>
+                    <p class="texto-instruccion">Por favor, autentíquese para acceder al portal de proveedores.</p>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="usuario" class="etiqueta">Nombre de usuario</label>
+                    <div class="contenedor-input">
+                        <img src="../Icons/person-circle.svg" alt="Icono de usuario" class="icono-campo">
+                        <input class="campo-entrada" type="text" id="usuario" name="usuario" placeholder="Ingrese ID de admin" required>
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="password" class="etiqueta">Contraseña</label>
+                    <div class="contenedor-input">
+                        <i class="bi bi-lock icono-campo"></i>
+                        <input class="campo-entrada" type="password" id="password" name="password" placeholder="••••••••" required>
+                        <img src="../Icons/eye.svg" alt="Mostrar contraseña" class="icono-ojo" id="togglePassword">
+                    </div>
+                </div>
+
+                <button type="submit" class="boton-ingresar">
+                    Iniciar Sesión <i class="bi bi-box-arrow-in-right icono-flecha"></i>
+                </button>
+
+            </form>
+
+            <div class="aviso-seguridad" id="mensajeAcceso">
+                <i class="bi bi-shield-check icono-escudo"></i>
+                <p class="texto-seguridad">
+                    <strong>Solo Acceso Seguro:</strong> Este sistema es para personal médico autorizado. Los intentos de acceso no autorizados son registrados y monitoreados para su cumplimiento.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="../JavaScript/login.js"></script>
+</body>
+
+</html>

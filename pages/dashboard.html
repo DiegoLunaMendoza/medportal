@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/styledashboard.css">
+    <script src="../JavaScript/dashboard.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cabecera-menu-wrapper">
+            <header class="cabecera">
+                <div class="cabecera-izquierda">
+                    <button id="boton-menu" class="boton-menu" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
+                    <span>Soy una cabecera</span>
+                </div>
+                <button id="logout" class="boton-logout">Cerrar Sesión</button>
+            </header>
+
+            <nav id="menu" class="menu" aria-label="Menú principal">
+                <a href="../pages/doctors.html">Doctores</a>
+                <a href="../pages/specialties.html">Especialidades</a>
+                <a href="../pages/patients.html">Búsqueda de Pacientes</a>
+            </nav>
+        </div>
+
+        <main class="contenido">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Edad</th>
+                    </tr>
+                </thead>
+                <tbody id="personasTable"></tbody>
+            </table>
+        </main>
+
+        <footer class="piedepagina"> Pie de pagina </footer>
+    </div>
+
+</body>
+
+</html>
