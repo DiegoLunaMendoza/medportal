@@ -183,6 +183,14 @@
     color: #0f172a;
 }
 
+.logo-portal {
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    background-color: #ffffff;
+    border-radius: 20%;   
+}
+
 @media screen and (min-width: 600px) {
     .cuerpo {
         justify-content: center;
